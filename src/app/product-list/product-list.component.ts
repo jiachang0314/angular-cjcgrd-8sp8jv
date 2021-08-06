@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
 
 import { products } from '../products';
+// import { productAlertsComponent } from '../product-alerts/product-alerts.component';
+// @NgModule({
+//   declarations: [ productAlertsComponent ],
 
+// })
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
