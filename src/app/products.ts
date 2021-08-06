@@ -1,7 +1,14 @@
-export const products = [
+export interface Product {
+  id: number;
+  name: string;
+  price: number;
+  description: string;
+}
+
+export const products: Product[] = [
   {
     id: 1,
-    name: 'Phone XL',
+    name: 'Phone XL1',
     price: 799,
     description: 'A large phone with one of the best screens'
   },
@@ -14,11 +21,10 @@ export const products = [
   {
     id: 3,
     name: 'Phone Standard',
-    price: 299,
+    price: 799,
     description: ''
   }
 ];
-
 
 /*
 Copyright Google LLC. All Rights Reserved.
