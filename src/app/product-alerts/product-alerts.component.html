@@ -1,3 +1,6 @@
 <p *ngIf="product.price > 700">
   <button (click)="notify.emit()">Notify Me</button>
 </p>
+<p>
+  父组件传递product的name值：{{name}}
+</p>
