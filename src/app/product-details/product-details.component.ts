@@ -8,12 +8,11 @@ import { Product, products } from '../products';
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
-  product: Product | undefined;
   constructor(
     private route: ActivatedRoute,
     private cartService: CartService
-    ) {}
-
+  ) {}
+  product: Product | undefined;
   ngOnInit() {
     // First get the product id from the current route.
     const routeParams = this.route.snapshot.paramMap;
